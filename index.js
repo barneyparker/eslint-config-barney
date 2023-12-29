@@ -1,4 +1,7 @@
-// Jest Linter Options
+/**
+ * @file ESLint configuration file
+ */
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
@@ -18,6 +21,8 @@ module.exports = {
     'jsdoc'
   ],
   rules: {
+    'require-await': 'error',
+    'no-return-await': 'error',
     // (a) => a not a => a
     'arrow-parens': [
       'error',
@@ -185,7 +190,7 @@ module.exports = {
       1,
       'always',
       {
-        'tags': [
+        tags: [
           'arg',
           'argument',
           'callback',
@@ -195,11 +200,11 @@ module.exports = {
           'returns',
           'return'
         ],
-        'customSpacings': {
-          'postDelimiter': 1,
-          'postTag': 1,
-          'postType': 1,
-          'postName': 2
+        customSpacings: {
+          postDelimiter: 1,
+          postTag: 1,
+          postType: 1,
+          postName: 2
         }
       }
     ],

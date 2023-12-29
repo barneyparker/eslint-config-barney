@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-barney",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Barney Parker's ESLint config",
   "author": "Barney Parker",
   "license": "MIT",
