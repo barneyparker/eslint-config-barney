@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-barney",
+  "version": "1.0.0",
+  "description": "Barney Parker's ESLint config",
+  "author": "Barney Parker",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barneyparker/eslint-config-barney.git"
+  },
+  "keywords": [
+    "eslint",
+    "lint",
+    "jsdoc",
+    "esm",
+    "es6",
+    "node",
+    "browser"
+  ],
+  "bugs": {
+    "url": "https://github.com/barneyparker/eslint-config-barney/issues"
+  },
+  "homepage": "https://github.com/barneyparker/eslint-config-barney#readme",
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^46.9.1"
+  }
+}
