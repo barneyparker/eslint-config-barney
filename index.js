@@ -39,7 +39,7 @@ module.exports = {
     // last item in a list should not have a comma at the end
     'comma-dangle': [
       'error',
-      'never'
+      'always'
     ],
     // [a, b] not [a,b]  or [a ,b]
     'comma-spacing': [
@@ -224,7 +224,7 @@ module.exports = {
     'jsdoc/require-description': 1,
     'jsdoc/require-description-complete-sentence': 0,
     'jsdoc/require-example': 0,
-    'jsdoc/require-file-overview': 1,
+    'jsdoc/require-file-overview': 0,
     'jsdoc/require-hyphen-before-param-description': 0,
     'jsdoc/require-jsdoc': [
       1,
