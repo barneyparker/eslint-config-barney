@@ -33,13 +33,19 @@ module.exports = {
       'error',
       '1tbs',
       {
-        allowSingleLine: true
-      }
+        allowSingleLine: true,
+      },
     ],
     // last item in a list should not have a comma at the end
     'comma-dangle': [
       'error',
-      'always'
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never',
+      },
     ],
     // [a, b] not [a,b]  or [a ,b]
     'comma-spacing': [
