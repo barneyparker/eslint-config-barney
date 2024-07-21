@@ -4,12 +4,20 @@ Barney Parker's base ESLint configuration.
 
 ## Usage
 
-1. `npm install --save-dev eslint-plugin-jsdoc eslint-config-barney`
-2. In your `.eslintrc.js` file, add the following:
+1. `npm install --save-dev eslint-config-barney`
+2. In your `eslintrc.config.js` file, add the following:
 
 ```js
-module.exports = {
-  extends: ['barney'],
-}
-```
+import barneyConfig from 'eslint-config-barney'
 
+export default [
+  ...barneyConfig,
+
+  // anything from here will override barneyConfig
+  {
+    rukles: {
+      'no-unused-vars': 'warn',
+    },
+  },
+]
+```
