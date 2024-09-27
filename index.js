@@ -16,6 +16,13 @@ export default [
     plugins: {
       jsdoc: jsdoc,
     },
+    settings: {
+      jsdoc: {
+        preferredTypes: {
+          'object<>': 'GenericObject',
+        }
+      },
+    },
     rules: {
       'require-await': 'error',
       'no-return-await': 'error',
