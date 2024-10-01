@@ -122,7 +122,11 @@ export default [
       ],
       // Remove unused defined variables
       'no-unused-vars': [
-        'error',
+        'error', {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_'
+        }
       ],
       // Don't reference a variable that is not defined
       'no-undef': [
